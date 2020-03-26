@@ -1,0 +1,110 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moryxy City Map Puzzle</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/3.3.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #body {background-color: "7fa9cf";}
+  .draggable { margin: 0; font-size: .9em; display: inline-block; }
+  .ui-widget-header p, .ui-widget-content p { margin: 0; display: inline-block; }
+  table, tr, td { margin: 0; padding: 0; font-size: 0; }
+  /*#snaptarget { height: 180px; } */
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move"});
+    $( "#draggable2" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move"});
+    $( "#draggable3" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move"});
+    $( "#draggable4" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move" });
+    $( "#draggable5" ).draggable({ snap: true,  snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move"});
+    $( "#draggable6" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move" });
+    $( "#draggable7" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move" });
+    $( "#draggable8" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move" });
+    $( "#draggable9" ).draggable({ snap: true, snapMode: "outer", snapTolerance: 50, stack: "#set div", cursor: "move" });
+  } );
+  </script>
+
+  <h style='font-size: 28px'> <b>Moryxy in the City</b> </h>
+  <p> Reassemble the map by dragging the pieces</p>
+  <p> * Use pinch-zoom for a closer look *</p>
+</head>
+<body bgcolor="7fa9cf">
+
+<!-- <div id="snaptarget" class="ui-widget-header">
+  <p>I'm a snap target</p>
+</div> -->
+
+<!-- <br style="clear:outer"> -->
+<div id="set">
+<table cellpadding=0 cellspacing=0>
+<tr>
+  <td>
+  <div id="draggable" class="draggable ui-widget-content" >
+    <img class="foto" src= "Group 1.jpg" width= 200 height=200>
+  </div>
+</td>
+
+  <td>
+  <div id="draggable2" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 2.jpg" width=200  height=200  >
+  </div>
+</td>
+
+<td>
+  <div id="draggable3" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 3.jpg" width= 200 height=200 >
+  </div>
+</td>
+</tr>
+
+<tr>
+<td>
+  <div id="draggable4" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 4.jpg" width= 200 height=200 >
+  </div>
+</td>
+
+<td>
+  <div id="draggable5" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 5.jpg" width= 200 height=200 >
+  </div>
+</td>
+<td>
+  <div id="draggable6" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 6.jpg" width= 200 height=200 >
+  </div>
+</td>
+</tr>
+
+<tr>
+<td>
+  <div id="draggable7" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 7.jpg" width= 200 height=200 >
+  </div>
+</td>
+
+<td>
+  <div id="draggable8" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 8.jpg" width= 200 height=200 >
+  </div>
+</td>
+<td>
+  <div id="draggable9" class="draggable ui-widget-content">
+    <img class="foto" src= "Group 9.jpg" width= 200 height=200 >
+  </div>
+</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>
