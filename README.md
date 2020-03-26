@@ -1,4 +1,5 @@
 # lessonAssets
-Assets for middle school lessons
+## Assets for middle school lessons
 
-[The Deadly path of Moryxy][/moryxy/map_puzzle.html]
+![Map decoder guide](Moryxy/puzzle_guide.html)
+[The Deadly path of Moryxy](Moryxy/map_puzzle.html)
